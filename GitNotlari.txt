@@ -1,0 +1,53 @@
+git, versiyon kontrol sisteminin adı
+github bir portal, websitesi
+mac-win-linux komutları aynı git için.
+
+ls> bulunduğumuz klasörün içini gösterir.
+ls -la> gizli klasörleri de gosterir
+pwd> neredeyim
+cd> bir klasörün içine götürür
+cd ..> bir önceki klasöre götürür
+clear> terminali temizler
+mkdir ***> klasör oluşturur
+touch ***> dosya oluşturur
+rm ***> dosya siler
+rm -rf ***> klasör siler
+git> yardım dokümanı
+git config --global user.name *****> kullanıcı adı değiştirir
+git config user.name> kullanıcı adı gösterir
+git config --global user.email *****> email ekler
+git config user.email> emaili gösterir
+git status> bulunduğum klasörün güncel git durumunu gosterir
+git init> git'i başlatır, klasörü repo yapar
+eğer git status yapınca bir hata(?) almıyorsak tekrar init yapmamamalıyız
+
+git add ***> git'in dosyayı takip etmesini sağlar
+git add .> her şeyi ekler
+git commit -m "........" > mesaj. şunu şunu yaptık vs. 
+git log> commitleri goruruz (q ile cıkarız eğer cok uzunsa)
+touch .gitignore> repoya asla almayacağım şeyler için bununla gitignore isimli dosya oluştururum, gitignore içine gizlemek istediğim dosyanın adını yazarım.
+git branch ***> yeni brach açarım
+git branch> brachleri gösterir
+git switch ***> *** branch'ine geçer. normalde master'da.
+git merge ***> birleştirme. eğer 1 numaranın içine 2 numaralı branchi koyacaksam 1 numaralı branche switch ile giderim, merge 1 yazarak yaparım.
+git stash> eğer dosyayı duzenlerken commit etmeden branch degistirmem gerekirse dosyayı zulaya atar 
+git stash list> saklanan dosyaları gosterir
+git stash pop> zuladaki dosyaları çıkarır
+git stash clear> tüm zulayı siler
+git restore ***> add yapmadan bir önceki commite döner, son işlemi geri alır 
+git checkout *commit adresi*> bir önceki commite döner <
+git reset *commit adres*> sonrasındaki commitleri siler
+git reset --hard *commit adres*> içerikleri de siler
+git revert *commit adres*> yeni commit oluşturur, eskileri de tutar
+git restore> 
+git diff> dosyadaki değişiklikleri gösterir. en sona 2 commit hashlerini yazarsam 2 commit arası farkları gösterir
+git rebase> 
+
+commit, checkpoint
+branch, projenin farklı dalları
+git add ile çalışma klasörünü sahneye alır
+git commit ile commitler (repoya alır)
+
+head güncel branch'i gösterir 
+fast forwarding, farklı branchte bir işlem yapıp ana branche merge etmek. deneysel şeyler için kullanılabilir. çakışma yok.
+merge conflict, çakışma 
